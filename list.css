@@ -5,4 +5,5 @@ body {
 
 .container {
   background-color: aliceblue;
+  width: 500px;
 }
