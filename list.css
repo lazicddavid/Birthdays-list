@@ -11,3 +11,8 @@ body {
   height: 1000px;
   border: none;
 }
+
+.btn {
+  background-color: blue;
+  padding: 10px 30px;
+}
