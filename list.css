@@ -13,6 +13,11 @@ body {
 }
 
 .btn {
-  background-color: blue;
+  border: none;
+  background-color: skyblue;
   padding: 10px 30px;
+}
+
+.btn:hover {
+  background-color: blueviolet;
 }
