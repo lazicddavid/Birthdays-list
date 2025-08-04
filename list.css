@@ -2,3 +2,7 @@ body {
   box-sizing: border-box;
   background-color: aqua;
 }
+
+.container {
+  background-color: aliceblue;
+}
