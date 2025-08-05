@@ -35,8 +35,6 @@ h1 {
 }
 
 img {
-  display: flex;
-  margin: 10px 10px;
   cursor: pointer;
   width: 75px;
   height: 75px;
@@ -53,7 +51,7 @@ img {
 .notification {
   display: flex;
   align-items: center;
-
+  align-items: flex-start;
   flex-direction: column;
 }
 
