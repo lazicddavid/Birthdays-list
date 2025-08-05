@@ -50,7 +50,7 @@ img {
 
 .notification {
   display: flex;
-  align-items: center;
+  gap: 20px;
   align-items: flex-start;
   flex-direction: column;
 }
