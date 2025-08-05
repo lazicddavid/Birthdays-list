@@ -1,15 +1,21 @@
 body {
+  font-family: sans-serif;
   box-sizing: border-box;
   background-color: aqua;
 }
 
 .container {
-  margin: 0 auto;
+  padding: 20px;
+  margin: 5rem auto;
   border-radius: 20px;
   background-color: white;
-  width: 500px;
-  height: 1000px;
+  width: 550px;
+  height: auto;
   border: none;
+}
+
+h1 {
+  font-weight: 500;
 }
 
 .btn {
@@ -20,10 +26,41 @@ body {
   color: black;
   font-weight: 600;
   padding: 10px 30px;
+  width: 100%;
 }
 
 .btn:hover {
   color: aliceblue;
-
   background-color: blue;
+}
+
+img {
+  display: flex;
+  margin: 10px 10px;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.years {
+  color: gray;
 }
