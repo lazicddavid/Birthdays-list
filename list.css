@@ -48,22 +48,36 @@ img {
   margin-top: 20px;
 }
 
-.notification {
+.person {
   display: flex;
+  align-items: center;
   gap: 20px;
-  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
   flex-direction: column;
 }
 
-.name {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
+.info h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
 }
 
-.name h4 {
-  margin: 0;
-  font-weight: bold;
+.info .years {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: gray;
 }
 
 .years {
