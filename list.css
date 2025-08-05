@@ -61,6 +61,11 @@ img {
   gap: 10px;
 }
 
+.name h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
 .years {
   font-size: 14px;
   color: gray;
