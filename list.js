@@ -1,29 +1,9 @@
 const birthdays = [
-  {
-    name: "Bertie Yates",
-    age: 29,
-    img: "https://randomuser.me/api/portraits/women/1.jpg",
-  },
-  {
-    name: "Hester Hogan",
-    age: 32,
-    img: "https://randomuser.me/api/portraits/women/2.jpg",
-  },
-  {
-    name: "Larry Little",
-    age: 36,
-    img: "https://randomuser.me/api/portraits/men/3.jpg",
-  },
-  {
-    name: "Sean Walsh",
-    age: 34,
-    img: "https://randomuser.me/api/portraits/men/4.jpg",
-  },
-  {
-    name: "Lola Gardner",
-    age: 29,
-    img: "https://randomuser.me/api/portraits/women/5.jpg",
-  },
+  { name: "Bertie Yates", age: 29, img: "person1.jpg" },
+  { name: "Hester Hogan", age: 32, img: "person2.jpg" },
+  { name: "Larry Little", age: 36, img: "person3.jpg" },
+  { name: "Sean Walsh", age: 34, img: "person4.jpg" },
+  { name: "Lola Gardner", age: 29, img: "person5.jpg" },
 ];
 
 const listContainer = document.getElementById("list");
@@ -44,10 +24,15 @@ function showBirthdays() {
       </div>
     `;
     listContainer.appendChild(div);
-
-    clearBtn.addEventListener("click", function () {
-      birthdays.length = 0;
-      showBirthdays();
-    });
-  });
+  // Naslov
+  title.textContent = `${birthdays.length} Birthday${birthdays.length === 1 ? "" : "s"} Today`;
 }
+
+// 4. Pozovi funkciju odmah kada se stranica učita
+showBirthdays();
+
+// 5. Dugme za brisanje
+clearBtn.addEventListener("click", function () {
+  birthdays.length = 0;
+  showBirthdays();
+});
