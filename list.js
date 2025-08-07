@@ -12,26 +12,29 @@ const clearBtn = document.getElementById("clearBtn");
 
 function showBirthdays() {
   listContainer.innerHTML = "";
-  birthdays.forEach((person) => {
-    const div = document.createElement("div");
-    div.classList.add("person");
 
-    div.innerHTML = `
-      <img src="${person.img} />
+  birthdays.forEach((person) => {
+    const personDiv = document.createElement("div");
+    personDiv.classList.add("person");
+
+    personDiv.innerHTML = `
+      <img src="${person.img}" alt="${person.name}" />
       <div class="info">
         <h4>${person.name}</h4>
         <p class="years">${person.age} years</p>
       </div>
     `;
-    listContainer.appendChild(div);
-  // Naslov
-  title.textContent = `${birthdays.length} Birthday${birthdays.length === 1 ? "" : "s"} Today`;
+
+    listContainer.appendChild(personDiv);
+  });
+
+  title.textContent = `${birthdays.length} Birthday${
+    birthdays.length === 1 ? "" : "s"
+  } Today`;
 }
 
-// 4. Pozovi funkciju odmah kada se stranica učita
 showBirthdays();
 
-// 5. Dugme za brisanje
 clearBtn.addEventListener("click", function () {
   birthdays.length = 0;
   showBirthdays();
