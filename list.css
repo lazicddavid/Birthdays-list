@@ -53,6 +53,7 @@ img {
 }
 
 .btn {
+  list-style: none;
   cursor: pointer;
   border-radius: 5px;
   border: none;
@@ -66,11 +67,4 @@ img {
 .btn:hover {
   color: aliceblue;
   background-color: blue;
-}
-
-.btn {
-  color: ;\
-  padding: ;
-  background-color: 
-  margin: ;
 }
